@@ -28,7 +28,7 @@ Example entry:
 
 ### Option 1: Etherscan
 1. Go to the [contract on Etherscan](https://etherscan.io/address/0x1eD74EaACE8a96A79BCa9099696723134c0F6751)
-2. Connect your wallet
+2. **Connect the wallet that matches your address** in the Merkle tree
 3. Use the "Write Contract" tab
 4. Call `claim` with your amount and proof array
 
@@ -39,8 +39,8 @@ Visit the [Unicorn Meat](https://www.unicornmeateth.com) and find the claim sect
 
 - ✅ **Safe to share**: Only contains public addresses and amounts
 - ✅ **On-chain verification**: Claims verified using Merkle root
-- ✅ **Any wallet**: Claim from any wallet (doesn't need to be your Mistcoin wallet)
-- ✅ **Cold wallet friendly**: Perfect for users with tokens in cold storage
+- ✅ **Self-claim only**: You must claim from the wallet that matches your address in the Merkle tree
+- ✅ **Secure**: No one else can claim your tokens for you
 
 ## 📊 Data Structure
 
@@ -53,10 +53,10 @@ The JSON file contains:
 ## ❓ FAQ
 
 **Q: Can I claim from a different wallet?**
-A: Yes! You can claim from any wallet using your address and proof.
+A: No, you must claim from the wallet that matches your address in the Merkle tree. This ensures only you can claim your tokens.
 
 **Q: What if I have tokens in a cold wallet?**
-A: Perfect! Claim from any wallet (hot, hardware, etc.) using your proof.
+A: You'll need to claim from the same wallet that holds your Mistcoin tokens. Make sure you have access to that wallet.
 
 **Q: How do I know my allocation is correct?**
 A: Check the JSON file for your address. The amount shown is your exact allocation.
