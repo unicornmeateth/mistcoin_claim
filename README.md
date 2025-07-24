@@ -32,8 +32,8 @@ Example entry:
 3. Use the "Write Contract" tab
 4. Call `claim` with your amount and proof array
 
-### Option 2: Direct Claim Instructions
-Visit the [Direct Claim Instructions](https://github.com/unicornmeateth/mistcoin_claim/tree/main) for detailed step-by-step guidance.
+### Option 2: Use the Unicorn Meat Website
+Visit the [Unicorn Meat](https://www.unicornmeateth.com) and find the claim section.
 
 ## 🔒 Security
 
