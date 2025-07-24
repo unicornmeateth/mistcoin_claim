@@ -7,7 +7,7 @@ Merkle tree data for Unicorn Meat token claim for Mistcoin holders on Ethereum L
 - **Total Claims**: 1,200 addresses
 - **Total Allocated**: 2,398,896 tokens
 - **Merkle Root**: `0x58eb938871a597c9fa119b622519fb716c7c8e7a9159ed7d1dee4ee0ea4d8aa3`
-- **Contract**: [Will be added after deployment]
+- **Contract**: [0x1eD74EaACE8a96A79BCa9099696723134c0F6751](https://etherscan.io/address/0x1eD74EaACE8a96A79BCa9099696723134c0F6751)
 
 ## 🔍 How to Find Your Claim
 
@@ -27,13 +27,13 @@ Example entry:
 ## 🚀 How to Claim
 
 ### Option 1: Etherscan
-1. Go to the contract on Etherscan
+1. Go to the [contract on Etherscan](https://etherscan.io/address/0x1eD74EaACE8a96A79BCa9099696723134c0F6751)
 2. Connect your wallet
 3. Use the "Write Contract" tab
 4. Call `claim` with your amount and proof array
 
-### Option 2: Web dApp
-Visit the claim dApp (link will be provided) and connect your wallet.
+### Option 2: Direct Claim Instructions
+Visit the [Direct Claim Instructions](https://github.com/unicornmeateth/mistcoin_claim/tree/main) for detailed step-by-step guidance.
 
 ## 🔒 Security
 
