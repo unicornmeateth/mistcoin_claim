@@ -11,26 +11,36 @@ Merkle tree data for Unicorn Meat token claim for Mistcoin holders on Ethereum L
 
 ## 🔍 How to Find Your Claim
 
+### Option 1: Use the Lookup Table (Recommended)
+1. **Open** [`claim-lookup-table.md`](./claim-lookup-table.md)
+2. **Search for your address** using Ctrl+F (Cmd+F on Mac)
+3. **Copy the merkleProof** - it's ready to paste into Etherscan
+4. **Note your amount** for verification
+
+### Option 2: Search the JSON File
 1. **Search for your address** in `merkle-data-mistcoin.json`
 2. **Find your entry** with your address, amount, and proof array
-3. **Use the amount and proof** to claim your tokens
+3. **Format the proof** as comma-separated values for Etherscan
 
-Example entry:
+Example entry from JSON:
 ```json
 {
   "address": "0xf07a2439296e07bc4320af924e655a01fb69d89c",
-  "amount": 20000,
+  "amount": 20000000,
   "proof": ["0xb312138c...", "0x9e3ce829...", ...]
 }
 ```
 
 ## 🚀 How to Claim
 
-### Option 1: Etherscan
+### Option 1: Etherscan (Recommended)
 1. Go to the [contract on Etherscan](https://etherscan.io/address/0xEC2c2AdEB8Ee3A338485ae684D1B1CB6DA0A498c)
 2. **Connect any wallet** (supports claiming for any address)
 3. Use the "Write Contract" tab
-4. Call `claim` with the recipient address, amount, and proof array
+4. Call `claim` function with:
+   - **recipient**: Your address (or the address you're claiming for)
+   - **amount**: Your allocation amount (in wei)
+   - **proof**: The merkleProof from the lookup table (comma-separated)
 
 ### Option 2: Use the Unicorn Meat Website
 Visit the [Unicorn Meat](https://www.unicornmeateth.com) and find the claim section.
@@ -59,7 +69,7 @@ A: Yes! You can claim for any address using any wallet. This makes it easy to cl
 A: You can claim for your cold wallet address using any other wallet. No need to access the cold wallet directly.
 
 **Q: How do I know my allocation is correct?**
-A: Check the JSON file for your address. The amount shown is your exact allocation.
+A: Check the lookup table or JSON file for your address. The amount shown is your exact allocation in wei.
 
 **Q: Is this data safe to share?**
 A: Yes! This only contains public information and Merkle proofs designed to be shared.
